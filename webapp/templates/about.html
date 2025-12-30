@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}About - Civic Value Index{% endblock %}
+
+{% block content %}
+<div style="max-width: 800px; margin: 3rem auto; padding: 0 2rem;">
+    <h1 style="font-size: 2.5rem; margin-bottom: 2rem;">About Civic Value Index</h1>
+
+    <p style="font-size: 1.125rem; margin-bottom: 3rem; color: var(--text-main);">We believe buying a home should be a data-driven decision.</p>
+
+    <h3 style="margin-top: 3rem; margin-bottom: 1rem; font-size: 1.5rem;">What We Do</h3>
+    <p style="margin-bottom: 1rem;">Civic Value Index combines four critical datasets that traditionally exist in silos:</p>
+    <ul style="margin-bottom: 2rem; line-height: 1.8;">
+        <li><strong>Crime Data:</strong> Real crime statistics, trends, and safety metrics</li>
+        <li><strong>City Services:</strong> 311 request response times and service quality</li>
+        <li><strong>Municipal Budget:</strong> How your tax dollars are spent in each neighborhood</li>
+        <li><strong>Real Estate Market:</strong> Home values, appreciation, and market momentum</li>
+    </ul>
+
+    <h3 style="margin-top: 3rem; margin-bottom: 1rem; font-size: 1.5rem;">Why It Matters</h3>
+    <p style="margin-bottom: 1rem;">Traditional real estate platforms show you pretty photos and square footage. We show you what really matters:</p>
+    <ul style="margin-bottom: 2rem; line-height: 1.8;">
+        <li>Is this neighborhood getting safer or more dangerous?</li>
+        <li>How quickly does the city respond to service requests?</li>
+        <li>Are you paying premium prices for premium city services?</li>
+        <li>Which neighborhoods are undervalued vs overpriced?</li>
+    </ul>
+
+    <h3 style="margin-top: 3rem; margin-bottom: 1rem; font-size: 1.5rem;">Our Methodology</h3>
+    <p style="margin-bottom: 1rem;">The <strong>Civic Value Index</strong> is calculated using:</p>
+    <ul style="margin-bottom: 2rem; line-height: 1.8;">
+        <li><strong>Safety Score (30%):</strong> Crime rates, trends, violent vs property crime mix</li>
+        <li><strong>Service Quality (25%):</strong> 311 response times, service efficiency</li>
+        <li><strong>Market Performance (25%):</strong> Home values, appreciation rates</li>
+        <li><strong>Civic Value Ratio (20%):</strong> Proprietary metric measuring service quality per dollar</li>
+    </ul>
+
+    <h3 style="margin-top: 3rem; margin-bottom: 1rem; font-size: 1.5rem;">Data Sources</h3>
+    <p style="margin-bottom: 1rem;">All data comes from official public sources:</p>
+    <ul style="margin-bottom: 1rem; line-height: 1.8;">
+        <li>Denver Crime Data (2020-2025)</li>
+        <li>Denver 311 Service Request System</li>
+        <li>Denver Checkbook (Transparent Denver Budget Data)</li>
+        <li>Zillow Home Value Index (ZHVI)</li>
+    </ul>
+    <p style="margin-bottom: 2rem;">Data is updated monthly to ensure accuracy.</p>
+
+    <h3 style="margin-top: 3rem; margin-bottom: 1rem; font-size: 1.5rem;">Who We Serve</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 1.5rem; margin-bottom: 3rem;">
+        <div>
+            <h5 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Home Buyers</h5>
+            <p style="color: var(--text-muted);">Make informed decisions about where to invest your life savings</p>
+        </div>
+        <div>
+            <h5 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Real Estate Agents</h5>
+            <p style="color: var(--text-muted);">Differentiate yourself with data-driven insights</p>
+        </div>
+        <div>
+            <h5 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Investors</h5>
+            <p style="color: var(--text-muted);">Find undervalued opportunities before the market</p>
+        </div>
+    </div>
+
+    <div class="card" style="background-color: #e0f2fe; border-color: var(--primary-blue); margin-top: 3rem;">
+        <div class="card-body" style="padding: 1.5rem;">
+            <p style="margin: 0; color: var(--text-main);"><strong>Disclaimer:</strong> This platform is for informational purposes only and should not be considered financial, legal, or investment advice. All data is subject to change and should be independently verified.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

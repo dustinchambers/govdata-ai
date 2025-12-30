@@ -1,0 +1,97 @@
+
+================================================================================
+CIVIC VALUE INDEX - NEIGHBORHOOD INTELLIGENCE REPORT
+Generated: December 16, 2025
+================================================================================
+
+NEIGHBORHOOD: BELCARO
+
+================================================================================
+OVERALL CIVIC VALUE INDEX: 80.0/100
+================================================================================
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    
+
+COMPONENT SCORES:
+-----------------
+🛡️  Safety Score:              82.5/100
+🛠️  Service Quality Score:     50.0/100
+📈 Market Performance Score:   91.1/100
+💎 Civic Value Ratio:          100.0/100
+
+================================================================================
+SAFETY PROFILE
+================================================================================
+
+Total Crimes (Last 12 months):    215
+  • Property Crimes:              131
+  • Violent Crimes:               3
+  • Traffic Incidents:            0
+
+Crime Trend:                      +26.3%
+🔺 INCREASING
+
+================================================================================
+SERVICE QUALITY
+================================================================================
+
+Total 311 Service Requests:       0
+Average Response Time:            0.0 days
+Median Response Time:             0.0 days
+
+Service Rating: ⭐⭐
+
+================================================================================
+REAL ESTATE MARKET
+================================================================================
+
+Current Median Home Value:        $1,409,021
+Year-over-Year Appreciation:      0.2%
+
+Market Momentum: 📊 STABLE
+
+================================================================================
+INVESTMENT INSIGHTS
+================================================================================
+
+CIVIC VALUE ANALYSIS:
+This neighborhood scores 80/100 on our Civic Value Index.
+
+KEY INSIGHT:
+🏆 EXCELLENT VALUE - This is a TOP TIER neighborhood with high scores across safety, service quality, and market performance.
+
+WHAT THIS MEANS FOR YOU:
+-------------------------
+
+FOR HOME BUYERS:
+• Expect premium pricing due to excellent safety and service scores
+
+FOR INVESTORS:
+• Strong hold for appreciation, low crime risk
+
+FOR RENTERS:
+• Premium rental market, expect higher rents but excellent quality of life
+
+================================================================================
+COMPETITIVE POSITIONING
+================================================================================
+
+This neighborhood ranks #4 out of 78 Denver neighborhoods.
+
+Percentile Rank: 95th percentile
+
+================================================================================
+DATA SOURCES
+================================================================================
+• Crime Data: City and County of Denver (2020-2025)
+• 311 Service Data: Denver 311 System
+• Budget Data: Denver Checkbook (Transparent Denver)
+• Real Estate Data: Zillow Home Value Index (ZHVI)
+
+Analysis by: Civic Value Index Platform
+Report ID: belcaro-20251216
+
+================================================================================
+DISCLAIMER: This report is for informational purposes only and should not be
+considered financial, legal, or investment advice. All data is subject to change.
+================================================================================

@@ -1,0 +1,284 @@
+{
+  "total_crimes": [
+    {
+      "neighborhood": "central-park",
+      "value": 20185.0,
+      "z_score": 3.441390606717586,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "dia",
+      "value": 18144.0,
+      "z_score": 2.9773567493165682,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 24852.0,
+      "z_score": 4.50246165644348,
+      "interpretation": "high"
+    }
+  ],
+  "most_common_crime_year": [
+    {
+      "neighborhood": "university-hills",
+      "value": 2025.0,
+      "z_score": 2.7850308764347647,
+      "interpretation": "high"
+    }
+  ],
+  "avg_crime_month": [
+    {
+      "neighborhood": "sun-valley",
+      "value": 6.828887977020927,
+      "z_score": 3.083716679900906,
+      "interpretation": "high"
+    }
+  ],
+  "avg_crime_hour": [
+    {
+      "neighborhood": "civic-center",
+      "value": 12.96462187601428,
+      "z_score": 4.4477277039758985,
+      "interpretation": "high"
+    }
+  ],
+  "night_crimes": [
+    {
+      "neighborhood": "central-park",
+      "value": 5729.0,
+      "z_score": 3.1747561192958744,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 7831.0,
+      "z_score": 4.771282588381134,
+      "interpretation": "high"
+    }
+  ],
+  "morning_crimes": [
+    {
+      "neighborhood": "dia",
+      "value": 3447.0,
+      "z_score": 3.1212829346615,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 4612.0,
+      "z_score": 4.579689867367642,
+      "interpretation": "high"
+    }
+  ],
+  "afternoon_crimes": [
+    {
+      "neighborhood": "central-park",
+      "value": 3966.0,
+      "z_score": 3.174215847215474,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "dia",
+      "value": 5339.0,
+      "z_score": 4.643824005605595,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 4434.0,
+      "z_score": 3.6751456492013275,
+      "interpretation": "high"
+    }
+  ],
+  "evening_crimes": [
+    {
+      "neighborhood": "central-park",
+      "value": 6133.0,
+      "z_score": 4.213686861460462,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 6388.0,
+      "z_score": 4.433698757648653,
+      "interpretation": "high"
+    }
+  ],
+  "weekend_crimes": [
+    {
+      "neighborhood": "central-park",
+      "value": 5558.0,
+      "z_score": 3.1464864404149213,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "dia",
+      "value": 5042.0,
+      "z_score": 2.7510213489062565,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 7715.0,
+      "z_score": 4.799622491547073,
+      "interpretation": "high"
+    }
+  ],
+  "weekday_crimes": [
+    {
+      "neighborhood": "central-park",
+      "value": 14627.0,
+      "z_score": 3.55565563132472,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "dia",
+      "value": 13102.0,
+      "z_score": 3.0641000488941503,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 17137.0,
+      "z_score": 4.364707770276018,
+      "interpretation": "high"
+    }
+  ],
+  "property_crimes": [
+    {
+      "neighborhood": "central-park",
+      "value": 14043.0,
+      "z_score": 4.536230933393103,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "dia",
+      "value": 12969.0,
+      "z_score": 4.102144129826129,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 11907.0,
+      "z_score": 3.6729074581425856,
+      "interpretation": "high"
+    }
+  ],
+  "violent_crimes": [
+    {
+      "neighborhood": "five-points",
+      "value": 1715.0,
+      "z_score": 4.824765065637596,
+      "interpretation": "high"
+    }
+  ],
+  "total_streetlight_requests": [
+    {
+      "neighborhood": "capitol-hill",
+      "value": 196.0,
+      "z_score": 4.073434705560609,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "central-park",
+      "value": 187.0,
+      "z_score": 3.835989620174613,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "five-points",
+      "value": 187.0,
+      "z_score": 3.835989620174613,
+      "interpretation": "high"
+    }
+  ],
+  "avg_response_time": [
+    {
+      "neighborhood": "barnum-west",
+      "value": 25.571428571428573,
+      "z_score": 4.901767381904394,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "clayton",
+      "value": 16.8,
+      "z_score": 2.7648298730196954,
+      "interpretation": "high"
+    }
+  ],
+  "median_response_time": [
+    {
+      "neighborhood": "barnum-west",
+      "value": 4.0,
+      "z_score": 2.721697254090405,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "cherry-creek",
+      "value": 4.0,
+      "z_score": 2.721697254090405,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "hilltop",
+      "value": 6.0,
+      "z_score": 4.887946088978687,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "skyland",
+      "value": 4.0,
+      "z_score": 2.721697254090405,
+      "interpretation": "high"
+    }
+  ],
+  "std_response_time": [
+    {
+      "neighborhood": "barnum-west",
+      "value": 45.453901294136934,
+      "z_score": 3.7928922439825192,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "clayton",
+      "value": 34.45407571439601,
+      "z_score": 2.5855012675157965,
+      "interpretation": "high"
+    }
+  ],
+  "max_response_time": [
+    {
+      "neighborhood": "baker",
+      "value": 168.0,
+      "z_score": 2.563755723278393,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "hampden-south",
+      "value": 167.0,
+      "z_score": 2.5414969358322987,
+      "interpretation": "high"
+    },
+    {
+      "neighborhood": "northeast-park-hill",
+      "value": 171.0,
+      "z_score": 2.6305320856166774,
+      "interpretation": "high"
+    }
+  ],
+  "streetlight_timespan_days": [
+    {
+      "neighborhood": "indian-creek",
+      "value": 154.0,
+      "z_score": 3.150123641122021,
+      "interpretation": "low"
+    },
+    {
+      "neighborhood": "kennedy",
+      "value": 0.0,
+      "z_score": 6.093440783091352,
+      "interpretation": "low"
+    }
+  ]
+}

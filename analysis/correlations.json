@@ -1,0 +1,17 @@
+{
+  "total_crime_vs_pending_lights": {
+    "correlation": NaN,
+    "p_value": NaN,
+    "significant": false
+  },
+  "property_crime_vs_pending_lights": {
+    "correlation": NaN,
+    "p_value": NaN,
+    "significant": false
+  },
+  "total_crime_vs_response_time": {
+    "correlation": -0.27937411848647686,
+    "p_value": 0.013246748023671168,
+    "significant": true
+  }
+}

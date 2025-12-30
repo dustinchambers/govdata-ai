@@ -1,0 +1,90 @@
+{
+  "dataset_summary": {
+    "total_neighborhoods": 78,
+    "total_crimes": 393778,
+    "total_streetlight_requests": 3245,
+    "pending_streetlight_requests": 0,
+    "avg_response_time_days": 5.451278924856608
+  },
+  "correlations": {
+    "total_crime_vs_pending_lights": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false
+    },
+    "property_crime_vs_pending_lights": {
+      "correlation": NaN,
+      "p_value": NaN,
+      "significant": false
+    },
+    "total_crime_vs_response_time": {
+      "correlation": -0.27937411848647686,
+      "p_value": 0.013246748023671168,
+      "significant": true
+    }
+  },
+  "top_pending_neighborhoods": [
+    {
+      "neighborhood": "athmar-park",
+      "pending_lights": 0,
+      "total_crimes": 3775,
+      "property_crimes": 1841
+    },
+    {
+      "neighborhood": "auraria",
+      "pending_lights": 0,
+      "total_crimes": 3207,
+      "property_crimes": 1019
+    },
+    {
+      "neighborhood": "baker",
+      "pending_lights": 0,
+      "total_crimes": 7106,
+      "property_crimes": 4148
+    },
+    {
+      "neighborhood": "barnum",
+      "pending_lights": 0,
+      "total_crimes": 3015,
+      "property_crimes": 1089
+    },
+    {
+      "neighborhood": "barnum-west",
+      "pending_lights": 0,
+      "total_crimes": 1783,
+      "property_crimes": 768
+    }
+  ],
+  "top_crime_neighborhoods": [
+    {
+      "neighborhood": "five-points",
+      "total_crimes": 24852,
+      "pending_lights": 0,
+      "avg_response_time": 3.592391304347826
+    },
+    {
+      "neighborhood": "central-park",
+      "total_crimes": 20185,
+      "pending_lights": 0,
+      "avg_response_time": 2.446236559139785
+    },
+    {
+      "neighborhood": "dia",
+      "total_crimes": 18144,
+      "pending_lights": 0,
+      "avg_response_time": 2.4285714285714284
+    },
+    {
+      "neighborhood": "capitol-hill",
+      "total_crimes": 15041,
+      "pending_lights": 0,
+      "avg_response_time": 2.4871794871794872
+    },
+    {
+      "neighborhood": "cbd",
+      "total_crimes": 13454,
+      "pending_lights": 0,
+      "avg_response_time": 4.090909090909091
+    }
+  ]
+}

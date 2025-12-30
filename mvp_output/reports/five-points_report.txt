@@ -1,0 +1,97 @@
+
+================================================================================
+CIVIC VALUE INDEX - NEIGHBORHOOD INTELLIGENCE REPORT
+Generated: December 16, 2025
+================================================================================
+
+NEIGHBORHOOD: FIVE-POINTS
+
+================================================================================
+OVERALL CIVIC VALUE INDEX: 47.6/100
+================================================================================
+
+▓▓▓▓▓▓▓▓▓           
+
+COMPONENT SCORES:
+-----------------
+🛡️  Safety Score:              10.2/100
+🛠️  Service Quality Score:     50.0/100
+📈 Market Performance Score:   48.0/100
+💎 Civic Value Ratio:          100.0/100
+
+================================================================================
+SAFETY PROFILE
+================================================================================
+
+Total Crimes (Last 12 months):    4630
+  • Property Crimes:              1841
+  • Violent Crimes:               291
+  • Traffic Incidents:            0
+
+Crime Trend:                      +0.1%
+🔺 INCREASING
+
+================================================================================
+SERVICE QUALITY
+================================================================================
+
+Total 311 Service Requests:       0
+Average Response Time:            0.0 days
+Median Response Time:             0.0 days
+
+Service Rating: ⭐⭐
+
+================================================================================
+REAL ESTATE MARKET
+================================================================================
+
+Current Median Home Value:        $573,890
+Year-over-Year Appreciation:      -4.5%
+
+Market Momentum: ❄️ COOLING
+
+================================================================================
+INVESTMENT INSIGHTS
+================================================================================
+
+CIVIC VALUE ANALYSIS:
+This neighborhood scores 48/100 on our Civic Value Index.
+
+KEY INSIGHT:
+⚠️ OPPORTUNITY ZONE - Lower current scores may indicate undervaluation or areas needing municipal attention.
+
+WHAT THIS MEANS FOR YOU:
+-------------------------
+
+FOR HOME BUYERS:
+• Lower entry price point, consider future infrastructure investment
+
+FOR INVESTORS:
+• Higher risk/reward profile - monitor city investment trends
+
+FOR RENTERS:
+• More affordable, prioritize security measures
+
+================================================================================
+COMPETITIVE POSITIONING
+================================================================================
+
+This neighborhood ranks #70 out of 78 Denver neighborhoods.
+
+Percentile Rank: 10th percentile
+
+================================================================================
+DATA SOURCES
+================================================================================
+• Crime Data: City and County of Denver (2020-2025)
+• 311 Service Data: Denver 311 System
+• Budget Data: Denver Checkbook (Transparent Denver)
+• Real Estate Data: Zillow Home Value Index (ZHVI)
+
+Analysis by: Civic Value Index Platform
+Report ID: five-points-20251216
+
+================================================================================
+DISCLAIMER: This report is for informational purposes only and should not be
+considered financial, legal, or investment advice. All data is subject to change.
+================================================================================

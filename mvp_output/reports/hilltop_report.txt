@@ -1,0 +1,97 @@
+
+================================================================================
+CIVIC VALUE INDEX - NEIGHBORHOOD INTELLIGENCE REPORT
+Generated: December 16, 2025
+================================================================================
+
+NEIGHBORHOOD: HILLTOP
+
+================================================================================
+OVERALL CIVIC VALUE INDEX: 81.7/100
+================================================================================
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    
+
+COMPONENT SCORES:
+-----------------
+🛡️  Safety Score:              94.0/100
+🛠️  Service Quality Score:     50.0/100
+📈 Market Performance Score:   84.0/100
+💎 Civic Value Ratio:          100.0/100
+
+================================================================================
+SAFETY PROFILE
+================================================================================
+
+Total Crimes (Last 12 months):    252
+  • Property Crimes:              133
+  • Violent Crimes:               12
+  • Traffic Incidents:            0
+
+Crime Trend:                      -29.7%
+🔻 DECREASING
+
+================================================================================
+SERVICE QUALITY
+================================================================================
+
+Total 311 Service Requests:       0
+Average Response Time:            0.0 days
+Median Response Time:             0.0 days
+
+Service Rating: ⭐⭐
+
+================================================================================
+REAL ESTATE MARKET
+================================================================================
+
+Current Median Home Value:        $1,445,639
+Year-over-Year Appreciation:      -2.2%
+
+Market Momentum: ❄️ COOLING
+
+================================================================================
+INVESTMENT INSIGHTS
+================================================================================
+
+CIVIC VALUE ANALYSIS:
+This neighborhood scores 82/100 on our Civic Value Index.
+
+KEY INSIGHT:
+🏆 EXCELLENT VALUE - This is a TOP TIER neighborhood with high scores across safety, service quality, and market performance.
+
+WHAT THIS MEANS FOR YOU:
+-------------------------
+
+FOR HOME BUYERS:
+• Expect premium pricing due to excellent safety and service scores
+
+FOR INVESTORS:
+• Strong hold for appreciation, low crime risk
+
+FOR RENTERS:
+• Premium rental market, expect higher rents but excellent quality of life
+
+================================================================================
+COMPETITIVE POSITIONING
+================================================================================
+
+This neighborhood ranks #2 out of 78 Denver neighborhoods.
+
+Percentile Rank: 97th percentile
+
+================================================================================
+DATA SOURCES
+================================================================================
+• Crime Data: City and County of Denver (2020-2025)
+• 311 Service Data: Denver 311 System
+• Budget Data: Denver Checkbook (Transparent Denver)
+• Real Estate Data: Zillow Home Value Index (ZHVI)
+
+Analysis by: Civic Value Index Platform
+Report ID: hilltop-20251216
+
+================================================================================
+DISCLAIMER: This report is for informational purposes only and should not be
+considered financial, legal, or investment advice. All data is subject to change.
+================================================================================

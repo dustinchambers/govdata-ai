@@ -1,0 +1,153 @@
+/* --- START OF FILE style.css --- */
+
+/* 1. TYPOGRAPHY IMPORTS */
+/* Merriweather for authority (Headings), Inter for UI/Data (Body) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+/* 2. VARIABLES - The "Trust" Palette */
+:root {
+    --primary-dark: #0f172a;    /* Deep Navy */
+    --primary-blue: #2563eb;    /* Trust Blue */
+    --accent-gold: #d97706;     /* Premium/Warning */
+    --surface-light: #f8fafc;   /* Slate White */
+    --surface-border: #e2e8f0;  /* Crisp Border */
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --success-green: #10b981;
+    --danger-red: #ef4444;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--surface-light);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-dark);
+    font-weight: 700;
+}
+
+/* 3. NAVIGATION - Professional & Clean */
+.navbar {
+    background-color: var(--primary-dark) !important;
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* 4. HERO SECTION - "The Data Dashboard" Look */
+.hero-section {
+    /* Deep Slate Blue instead of purple gradient */
+    background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Abstract background detail to look like data */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(#334155 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.1;
+}
+
+.hero-section h1 {
+    color: white;
+    font-weight: 300; /* Thinner serif looks more elegant */
+}
+
+/* 5. CARDS - "Micro-borders" instead of heavy shadows */
+.card {
+    border: 1px solid var(--surface-border);
+    border-radius: 8px; /* Slightly squarer than before */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Very subtle */
+    background: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1); /* Blue glow on hover */
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid var(--surface-border);
+    padding: 1.25rem;
+}
+
+/* 6. DATA VISUALIZATION STYLES */
+/* Make progress bars look like "Meters" */
+.progress {
+    height: 8px; /* Thinner */
+    border-radius: 4px;
+    background-color: #f1f5f9;
+    overflow: hidden;
+}
+
+.progress-bar {
+    border-radius: 4px;
+}
+
+/* The Big Score Circle (if you add one later) */
+.display-1 {
+    font-family: 'Inter', sans-serif; /* Numbers should be sans */
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+/* 7. SEARCH INPUT - Big and Confident */
+.input-group-lg > .form-control {
+    border: 2px solid var(--surface-border);
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.input-group-lg > .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+/* 8. LIST GROUPS (Search Results) */
+.list-group-item {
+    border: 1px solid var(--surface-border);
+    margin-bottom: 8px;
+    border-radius: 6px !important; /* Detached look */
+    transition: background-color 0.1s;
+}
+
+.list-group-item:hover {
+    background-color: #f8fafc;
+    border-color: var(--primary-blue);
+}
+
+/* 9. UTILITIES */
+.text-success { color: var(--success-green) !important; }
+.text-danger { color: var(--danger-red) !important; }
+.bg-primary { background-color: var(--primary-blue) !important; }
+
+/* Badge Refinement */
+.badge {
+    font-weight: 600;
+    padding: 0.5em 0.9em;
+    letter-spacing: 0.5px;
+}

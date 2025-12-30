@@ -1,0 +1,97 @@
+
+================================================================================
+CIVIC VALUE INDEX - NEIGHBORHOOD INTELLIGENCE REPORT
+Generated: December 16, 2025
+================================================================================
+
+NEIGHBORHOOD: WASHINGTON-PARK
+
+================================================================================
+OVERALL CIVIC VALUE INDEX: 79.6/100
+================================================================================
+
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓     
+
+COMPONENT SCORES:
+-----------------
+🛡️  Safety Score:              87.1/100
+🛠️  Service Quality Score:     50.0/100
+📈 Market Performance Score:   83.8/100
+💎 Civic Value Ratio:          100.0/100
+
+================================================================================
+SAFETY PROFILE
+================================================================================
+
+Total Crimes (Last 12 months):    249
+  • Property Crimes:              159
+  • Violent Crimes:               8
+  • Traffic Incidents:            0
+
+Crime Trend:                      +2.4%
+🔺 INCREASING
+
+================================================================================
+SERVICE QUALITY
+================================================================================
+
+Total 311 Service Requests:       0
+Average Response Time:            0.0 days
+Median Response Time:             0.0 days
+
+Service Rating: ⭐⭐
+
+================================================================================
+REAL ESTATE MARKET
+================================================================================
+
+Current Median Home Value:        $1,179,063
+Year-over-Year Appreciation:      0.3%
+
+Market Momentum: 📊 STABLE
+
+================================================================================
+INVESTMENT INSIGHTS
+================================================================================
+
+CIVIC VALUE ANALYSIS:
+This neighborhood scores 80/100 on our Civic Value Index.
+
+KEY INSIGHT:
+🏆 EXCELLENT VALUE - This is a TOP TIER neighborhood with high scores across safety, service quality, and market performance.
+
+WHAT THIS MEANS FOR YOU:
+-------------------------
+
+FOR HOME BUYERS:
+• Expect premium pricing due to excellent safety and service scores
+
+FOR INVESTORS:
+• Strong hold for appreciation, low crime risk
+
+FOR RENTERS:
+• Premium rental market, expect higher rents but excellent quality of life
+
+================================================================================
+COMPETITIVE POSITIONING
+================================================================================
+
+This neighborhood ranks #5 out of 78 Denver neighborhoods.
+
+Percentile Rank: 94th percentile
+
+================================================================================
+DATA SOURCES
+================================================================================
+• Crime Data: City and County of Denver (2020-2025)
+• 311 Service Data: Denver 311 System
+• Budget Data: Denver Checkbook (Transparent Denver)
+• Real Estate Data: Zillow Home Value Index (ZHVI)
+
+Analysis by: Civic Value Index Platform
+Report ID: washington-park-20251216
+
+================================================================================
+DISCLAIMER: This report is for informational purposes only and should not be
+considered financial, legal, or investment advice. All data is subject to change.
+================================================================================

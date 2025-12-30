@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "WebFetch(domain:opendata-geospatialdenver.hub.arcgis.com)",
+      "WebSearch",
+      "WebFetch(domain:www.denvergov.org)",
+      "Bash(curl:*)",
+      "Bash(pip3 install:*)"
+    ]
+  }
+}

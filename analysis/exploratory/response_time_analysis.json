@@ -1,0 +1,17 @@
+{
+  "statistics": {
+    "mean": 3.813357034027425,
+    "median": 1.0,
+    "std": 12.010767092144235,
+    "min": 0.0,
+    "max": 171.0,
+    "q25": 1.0,
+    "q75": 2.0
+  },
+  "outlier_bounds": {
+    "lower": -0.5,
+    "upper": 3.5
+  },
+  "fast_outliers": 0,
+  "slow_outliers": 665
+}

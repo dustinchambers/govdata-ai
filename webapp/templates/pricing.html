@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Pricing - Civic Value Index{% endblock %}
+
+{% block content %}
+<div style="max-width: 1000px; margin: 3rem auto; padding: 0 2rem;">
+    <div style="text-align: center; margin-bottom: 4rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Simple, Transparent Pricing</h1>
+        <p style="font-size: 1.125rem; color: var(--text-muted);">Choose the plan that works for you</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+        <!-- Individual Reports -->
+        <div class="card">
+            <div class="card-body" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Single Report</h3>
+                <div class="display-1" style="margin-bottom: 1rem; font-size: 3rem;">$39</div>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">One-time purchase</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 2rem; flex-grow: 1; line-height: 1.8;">
+                    <li>✓ Full neighborhood report</li>
+                    <li>✓ All 4 component scores</li>
+                    <li>✓ Investment insights</li>
+                    <li>✓ PDF download</li>
+                    <li>✓ Valid for 30 days</li>
+                </ul>
+                <button style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary-blue); background: white; color: var(--primary-blue); border-radius: 6px; font-weight: 500; cursor: not-allowed; font-family: 'Inter', sans-serif;">Coming Soon</button>
+            </div>
+        </div>
+
+        <!-- Realtor Plan -->
+        <div class="card" style="border-color: var(--primary-blue); box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);">
+            <div style="background-color: var(--primary-blue); color: white; text-align: center; padding: 0.75rem; font-weight: 600; font-size: 0.875rem; letter-spacing: 0.5px;">
+                MOST POPULAR
+            </div>
+            <div class="card-body" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Realtor Pro</h3>
+                <div class="display-1" style="margin-bottom: 1rem; font-size: 3rem;">$149<span style="font-size: 1rem; color: var(--text-muted);">/mo</span></div>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">For real estate professionals</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 2rem; flex-grow: 1; line-height: 1.8;">
+                    <li>✓ <strong>Unlimited</strong> reports</li>
+                    <li>✓ Branded PDFs with your logo</li>
+                    <li>✓ Priority data updates</li>
+                    <li>✓ Email support</li>
+                    <li>✓ Client sharing links</li>
+                    <li>✓ API access</li>
+                </ul>
+                <button style="padding: 0.75rem 1.5rem; border: none; background: var(--primary-blue); color: white; border-radius: 6px; font-weight: 500; cursor: not-allowed; font-family: 'Inter', sans-serif;">Coming Soon</button>
+            </div>
+        </div>
+
+        <!-- Investor Plan -->
+        <div class="card">
+            <div class="card-body" style="padding: 2rem; display: flex; flex-direction: column; height: 100%;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Investor</h3>
+                <div class="display-1" style="margin-bottom: 1rem; font-size: 3rem;">$499<span style="font-size: 1rem; color: var(--text-muted);">/mo</span></div>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">For serious investors</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 2rem; flex-grow: 1; line-height: 1.8;">
+                    <li>✓ Everything in Realtor Pro</li>
+                    <li>✓ Historical trend data</li>
+                    <li>✓ Predictive analytics</li>
+                    <li>✓ Custom alerts</li>
+                    <li>✓ Bulk export</li>
+                    <li>✓ White-label options</li>
+                </ul>
+                <button style="padding: 0.75rem 1.5rem; border: 2px solid var(--primary-blue); background: white; color: var(--primary-blue); border-radius: 6px; font-weight: 500; cursor: not-allowed; font-family: 'Inter', sans-serif;">Coming Soon</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 4rem;">
+        <h3 style="font-size: 1.75rem; margin-bottom: 1rem;">Enterprise Solutions</h3>
+        <p style="font-size: 1.125rem; color: var(--text-muted); margin-bottom: 0.5rem;">Custom pricing for property management companies, insurance firms, and large brokerages</p>
+        <p style="color: var(--text-muted);">Contact us for volume licensing and API integration</p>
+    </div>
+</div>
+{% endblock %}

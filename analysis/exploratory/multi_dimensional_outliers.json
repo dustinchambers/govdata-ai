@@ -1,0 +1,145 @@
+{
+  "central-park": [
+    {
+      "feature": "total_crimes",
+      "z_score": 3.441390606717586,
+      "interpretation": "high"
+    },
+    {
+      "feature": "night_crimes",
+      "z_score": 3.1747561192958744,
+      "interpretation": "high"
+    },
+    {
+      "feature": "afternoon_crimes",
+      "z_score": 3.174215847215474,
+      "interpretation": "high"
+    },
+    {
+      "feature": "evening_crimes",
+      "z_score": 4.213686861460462,
+      "interpretation": "high"
+    },
+    {
+      "feature": "weekend_crimes",
+      "z_score": 3.1464864404149213,
+      "interpretation": "high"
+    },
+    {
+      "feature": "weekday_crimes",
+      "z_score": 3.55565563132472,
+      "interpretation": "high"
+    },
+    {
+      "feature": "property_crimes",
+      "z_score": 4.536230933393103,
+      "interpretation": "high"
+    },
+    {
+      "feature": "total_streetlight_requests",
+      "z_score": 3.835989620174613,
+      "interpretation": "high"
+    }
+  ],
+  "dia": [
+    {
+      "feature": "total_crimes",
+      "z_score": 2.9773567493165682,
+      "interpretation": "high"
+    },
+    {
+      "feature": "morning_crimes",
+      "z_score": 3.1212829346615,
+      "interpretation": "high"
+    },
+    {
+      "feature": "afternoon_crimes",
+      "z_score": 4.643824005605595,
+      "interpretation": "high"
+    },
+    {
+      "feature": "weekend_crimes",
+      "z_score": 2.7510213489062565,
+      "interpretation": "high"
+    },
+    {
+      "feature": "weekday_crimes",
+      "z_score": 3.0641000488941503,
+      "interpretation": "high"
+    },
+    {
+      "feature": "property_crimes",
+      "z_score": 4.102144129826129,
+      "interpretation": "high"
+    }
+  ],
+  "five-points": [
+    {
+      "feature": "total_crimes",
+      "z_score": 4.50246165644348,
+      "interpretation": "high"
+    },
+    {
+      "feature": "night_crimes",
+      "z_score": 4.771282588381134,
+      "interpretation": "high"
+    },
+    {
+      "feature": "morning_crimes",
+      "z_score": 4.579689867367642,
+      "interpretation": "high"
+    },
+    {
+      "feature": "afternoon_crimes",
+      "z_score": 3.6751456492013275,
+      "interpretation": "high"
+    },
+    {
+      "feature": "evening_crimes",
+      "z_score": 4.433698757648653,
+      "interpretation": "high"
+    },
+    {
+      "feature": "weekend_crimes",
+      "z_score": 4.799622491547073,
+      "interpretation": "high"
+    },
+    {
+      "feature": "weekday_crimes",
+      "z_score": 4.364707770276018,
+      "interpretation": "high"
+    },
+    {
+      "feature": "property_crimes",
+      "z_score": 3.6729074581425856,
+      "interpretation": "high"
+    },
+    {
+      "feature": "violent_crimes",
+      "z_score": 4.824765065637596,
+      "interpretation": "high"
+    },
+    {
+      "feature": "total_streetlight_requests",
+      "z_score": 3.835989620174613,
+      "interpretation": "high"
+    }
+  ],
+  "barnum-west": [
+    {
+      "feature": "avg_response_time",
+      "z_score": 4.901767381904394,
+      "interpretation": "high"
+    },
+    {
+      "feature": "median_response_time",
+      "z_score": 2.721697254090405,
+      "interpretation": "high"
+    },
+    {
+      "feature": "std_response_time",
+      "z_score": 3.7928922439825192,
+      "interpretation": "high"
+    }
+  ]
+}

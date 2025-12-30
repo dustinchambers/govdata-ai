@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block title %}{{ hood.neighborhood|title }} - Civic Value Index{% endblock %}
+
+{% block content %}
+<div style="max-width: 900px; margin: 3rem auto; padding: 0 2rem;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+        <h1 style="text-transform: capitalize; font-size: 2.5rem; margin-bottom: 0.5rem;">{{ hood.neighborhood.replace('-', ' ') }}</h1>
+        <p style="color: var(--text-muted); font-size: 1rem;">Neighborhood Intelligence Report</p>
+    </div>
+
+    <!-- Overall Score Card -->
+    <div class="card" style="margin-bottom: 2rem; border-color: {% if hood.tier_class == 'success' %}var(--success-green){% elif hood.tier_class == 'warning' %}var(--accent-gold){% else %}var(--primary-blue){% endif %};">
+        <div class="card-body" style="text-align: center; padding: 3rem;">
+            <h2 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Civic Value Index</h2>
+            <div class="display-1" style="color: {% if hood.tier_class == 'success' %}var(--success-green){% elif hood.tier_class == 'warning' %}var(--accent-gold){% else %}var(--primary-blue){% endif %};">
+                {{ "%.1f"|format(hood.civic_value_index) }}<span style="font-size: 2rem;">/100</span>
+            </div>
+            <div class="progress" style="margin-top: 2rem; height: 12px;">
+                <div style="width: {{ hood.civic_value_index }}%; height: 100%; background-color: {% if hood.tier_class == 'success' %}var(--success-green){% elif hood.tier_class == 'warning' %}var(--accent-gold){% else %}var(--primary-blue){% endif %}; border-radius: 4px;"></div>
+            </div>
+            <h4 style="margin-top: 2rem; color: {% if hood.tier_class == 'success' %}var(--success-green){% elif hood.tier_class == 'warning' %}var(--accent-gold){% else %}var(--primary-blue){% endif %};">{{ hood.tier }}</h4>
+            <p style="color: var(--text-muted); margin-top: 1rem;">Ranks #{{ hood.rank }} out of {{ hood.total_neighborhoods }} neighborhoods ({{ hood.percentile }}th percentile)</p>
+            <a href="/download/{{ hood.neighborhood }}" style="display: inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color: var(--primary-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: 500;">
+                Download PDF Report
+            </a>
+        </div>
+    </div>
+
+    <!-- Component Scores -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+        <div class="card">
+            <div class="card-body">
+                <h5 style="font-size: 0.95rem; margin-bottom: 1rem;">Safety Score</h5>
+                <h3 style="color: var(--primary-blue); margin-bottom: 0.75rem;">{{ "%.1f"|format(hood.safety_score) }}/100</h3>
+                <div class="progress">
+                    <div style="width: {{ hood.safety_score }}%; height: 100%; background-color: var(--primary-blue); border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 style="font-size: 0.95rem; margin-bottom: 1rem;">Service Quality</h5>
+                <h3 style="color: var(--primary-blue); margin-bottom: 0.75rem;">{{ "%.1f"|format(hood.service_score) }}/100</h3>
+                <div class="progress">
+                    <div style="width: {{ hood.service_score }}%; height: 100%; background-color: var(--primary-blue); border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 style="font-size: 0.95rem; margin-bottom: 1rem;">Market Performance</h5>
+                <h3 style="color: var(--primary-blue); margin-bottom: 0.75rem;">{{ "%.1f"|format(hood.market_score) }}/100</h3>
+                <div class="progress">
+                    <div style="width: {{ hood.market_score }}%; height: 100%; background-color: var(--primary-blue); border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 style="font-size: 0.95rem; margin-bottom: 1rem;">Civic Value Ratio</h5>
+                <h3 style="color: var(--primary-blue); margin-bottom: 0.75rem;">{{ "%.1f"|format(hood.civic_value_ratio) }}/100</h3>
+                <div class="progress">
+                    <div style="width: {{ hood.civic_value_ratio }}%; height: 100%; background-color: var(--primary-blue); border-radius: 4px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Safety Profile -->
+    <div class="card" style="margin-bottom: 2rem;">
+        <div class="card-header" style="background-color: var(--primary-dark); color: white; padding: 1rem 1.25rem;">
+            <h5 style="margin: 0; font-size: 1rem; font-weight: 600;">Safety Profile</h5>
+        </div>
+        <div class="card-body" style="padding: 1.5rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <p style="margin-bottom: 0.75rem;"><strong>Total Crimes (12 months):</strong> {{ hood.total_crimes_12mo|int }}</p>
+                    <p style="margin-bottom: 0.75rem;"><strong>Property Crimes:</strong> {{ hood.property_crimes_12mo|int }}</p>
+                    <p style="margin-bottom: 0;"><strong>Violent Crimes:</strong> {{ hood.violent_crimes_12mo|int }}</p>
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.5rem;"><strong>Crime Trend:</strong>
+                        <span class="badge" style="background-color: {% if hood.crime_trend_pct < 0 %}var(--success-green){% else %}var(--danger-red){% endif %}; color: white; padding: 0.35rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">
+                            {{ "%+.1f"|format(hood.crime_trend_pct) }}%
+                        </span>
+                    </p>
+                    <p style="margin: 0; color: var(--text-muted);">{{ hood.crime_trend_label }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Real Estate Market -->
+    <div class="card" style="margin-bottom: 2rem;">
+        <div class="card-header" style="background-color: var(--primary-dark); color: white; padding: 1rem 1.25rem;">
+            <h5 style="margin: 0; font-size: 1rem; font-weight: 600;">Real Estate Market</h5>
+        </div>
+        <div class="card-body" style="padding: 1.5rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <div>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong>Median Home Value:</strong></p>
+                    <h4 style="color: var(--success-green); margin: 0; font-size: 1.75rem;">${{ "{:,.0f}".format(hood.current_home_value) }}</h4>
+                </div>
+                <div>
+                    <p style="margin-bottom: 0.5rem; color: var(--text-muted);"><strong>YoY Appreciation:</strong></p>
+                    <h4 style="color: {% if hood.yoy_appreciation > 0 %}var(--success-green){% else %}var(--danger-red){% endif %}; margin: 0; font-size: 1.75rem;">
+                        {{ "%+.1f"|format(hood.yoy_appreciation) }}%
+                    </h4>
+                    <p style="margin-top: 0.5rem; color: var(--text-muted);">{{ hood.market_momentum }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investment Insights -->
+    <div class="card" style="margin-bottom: 2rem; border-color: {% if hood.tier_class == 'success' %}var(--success-green){% elif hood.tier_class == 'warning' %}var(--accent-gold){% else %}var(--primary-blue){% endif %};">
+        <div class="card-header" style="background-color: {% if hood.tier_class == 'success' %}var(--success-green){% elif hood.tier_class == 'warning' %}var(--accent-gold){% else %}var(--primary-blue){% endif %}; color: white; padding: 1rem 1.25rem;">
+            <h5 style="margin: 0; font-size: 1rem; font-weight: 600;">Investment Insights</h5>
+        </div>
+        <div class="card-body" style="padding: 1.5rem;">
+            <h6 style="font-weight: 600; margin-bottom: 0.5rem; font-size: 0.95rem;">For Home Buyers:</h6>
+            <p style="margin-bottom: 1.5rem; color: var(--text-main);">{{ hood.buyer_advice }}</p>
+
+            <h6 style="font-weight: 600; margin-bottom: 0.5rem; font-size: 0.95rem;">For Investors:</h6>
+            <p style="margin-bottom: 1.5rem; color: var(--text-main);">{{ hood.investor_advice }}</p>
+
+            <h6 style="font-weight: 600; margin-bottom: 0.5rem; font-size: 0.95rem;">For Renters:</h6>
+            <p style="margin-bottom: 0; color: var(--text-main);">{{ hood.renter_advice }}</p>
+        </div>
+    </div>
+
+    <!-- Data Sources -->
+    <div class="card" style="background-color: var(--surface-light); margin-bottom: 2rem;">
+        <div class="card-body" style="padding: 1.25rem; font-size: 0.875rem; color: var(--text-muted);">
+            <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-main);">Data Sources:</strong> Denver Crime Data (2020-2025), Denver 311 System, Denver Checkbook, Zillow Home Value Index</p>
+            <p style="margin-bottom: 0.5rem;"><strong style="color: var(--text-main);">Generated:</strong> {{ hood.neighborhood }}-{{ "{:%Y%m%d}".format(now) }}</p>
+            <p style="margin: 0; font-style: italic;">Disclaimer: This report is for informational purposes only.</p>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/" style="display: inline-block; padding: 0.75rem 1.5rem; border: 2px solid var(--primary-blue); color: var(--primary-blue); text-decoration: none; border-radius: 6px; font-weight: 500;">← Back to Search</a>
+    </div>
+</div>
+{% endblock %}

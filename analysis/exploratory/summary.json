@@ -1,0 +1,47 @@
+{
+  "data_overview": {
+    "neighborhoods_analyzed": 78,
+    "total_crimes": 393778,
+    "total_311_requests": 453938,
+    "total_streetlight_requests": 4493
+  },
+  "correlation_insights": {
+    "significant_correlations_found": 66,
+    "strongest_positive": {
+      "features": "total_crimes \u2194 weekday_crimes",
+      "correlation": 0.9991611217794354
+    },
+    "strongest_negative": {
+      "features": "violent_crimes \u2194 median_response_time",
+      "correlation": -0.3229146780277616
+    }
+  },
+  "outlier_insights": {
+    "features_with_outliers": 18,
+    "multi_dimensional_outliers": 4
+  },
+  "temporal_insights": {
+    "crime_peak_hour": 0,
+    "crime_peak_month": 7,
+    "streetlight_peak_hour": 0,
+    "hourly_correlation": 0.28936247434409257,
+    "monthly_correlation": 0.12924462569101494
+  },
+  "response_time_insights": {
+    "statistics": {
+      "mean": 3.813357034027425,
+      "median": 1.0,
+      "std": 12.010767092144235,
+      "min": 0.0,
+      "max": 171.0,
+      "q25": 1.0,
+      "q75": 2.0
+    },
+    "outlier_bounds": {
+      "lower": -0.5,
+      "upper": 3.5
+    },
+    "fast_outliers": 0,
+    "slow_outliers": 665
+  }
+}

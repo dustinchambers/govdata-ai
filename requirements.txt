@@ -1,0 +1,25 @@
+# Ethica.Design MVP - Python Dependencies
+
+# Data manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# HTTP requests for data download
+requests>=2.31.0
+
+# Statistical analysis
+scipy>=1.11.0
+
+# Geospatial data (for GeoJSON handling)
+geopandas>=0.14.0
+
+# AI insights generation
+anthropic>=0.39.0
+
+# Optional: For visualization (if you want to create charts)
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# Optional: For creating interactive maps (future enhancement)
+folium>=0.15.0
+plotly>=5.18.0
