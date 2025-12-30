@@ -150,34 +150,11 @@ async function loadAllNeighborhoods() {
         loadingState.classList.add('hidden');
         resultsCount.textContent = `${neighborhoodsArray.length} neighborhoods analyzed`;
 
-        // Render neighborhoods
-        listContainer.innerHTML = neighborhoodsArray.map(hood => `
-            <div class="neighborhood-card" onclick="window.location.href='neighborhood.html?id=${hood.id}'">
-                <div class="neighborhood-score">
-                    <div class="score-value">${hood.civicScore}</div>
-                    <div class="score-label">Civic Score</div>
-                </div>
-
-                <div class="neighborhood-info">
-                    <h3>${hood.name}</h3>
-                    <div class="neighborhood-stats">
-                        <div class="stat-item">
-                            <span>🚨</span>
-                            <span>${formatNumber(hood.crime_count || 0)} crimes</span>
-                        </div>
-                        <div class="stat-item">
-                            <span>💡</span>
-                            <span>${formatNumber(hood.streetlight_requests || 0)} service requests</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="neighborhood-arrow">→</div>
-            </div>
-        `).join('');
-
-        // Store for filtering
+        // Store for filtering and sorting
         window.allNeighborhoods = neighborhoodsArray;
+
+        // Render neighborhoods
+        renderNeighborhoodsList(neighborhoodsArray);
 
     } catch (error) {
         loadingState.classList.add('hidden');
@@ -186,22 +163,52 @@ async function loadAllNeighborhoods() {
     }
 }
 
-function filterNeighborhoods(searchTerm) {
+function sortNeighborhoods() {
     if (!window.allNeighborhoods) return;
 
-    const term = searchTerm.toLowerCase();
-    const filtered = window.allNeighborhoods.filter(hood =>
-        hood.name.toLowerCase().includes(term)
-    );
+    const sortBy = document.getElementById('sortBy').value;
+    const neighborhoods = [...window.allNeighborhoods];
 
+    // Apply sorting
+    switch(sortBy) {
+        case 'civic-asc':
+            neighborhoods.sort((a, b) => a.civicScore - b.civicScore);
+            break;
+        case 'civic-desc':
+            neighborhoods.sort((a, b) => b.civicScore - a.civicScore);
+            break;
+        case 'name-asc':
+            neighborhoods.sort((a, b) => a.name.localeCompare(b.name));
+            break;
+        case 'name-desc':
+            neighborhoods.sort((a, b) => b.name.localeCompare(a.name));
+            break;
+        case 'crime-desc':
+            neighborhoods.sort((a, b) => (b.crime_count || 0) - (a.crime_count || 0));
+            break;
+        case 'crime-asc':
+            neighborhoods.sort((a, b) => (a.crime_count || 0) - (b.crime_count || 0));
+            break;
+        case 'service-desc':
+            neighborhoods.sort((a, b) => (b.streetlight_requests || 0) - (a.streetlight_requests || 0));
+            break;
+        case 'service-asc':
+            neighborhoods.sort((a, b) => (a.streetlight_requests || 0) - (b.streetlight_requests || 0));
+            break;
+    }
+
+    renderNeighborhoodsList(neighborhoods);
+}
+
+function renderNeighborhoodsList(neighborhoods) {
     const listContainer = document.getElementById('neighborhoodsList');
 
-    if (filtered.length === 0) {
-        listContainer.innerHTML = '<div class="loading-state"><p>No neighborhoods found matching "' + searchTerm + '"</p></div>';
+    if (neighborhoods.length === 0) {
+        listContainer.innerHTML = '<div class="loading-state"><p>No neighborhoods found</p></div>';
         return;
     }
 
-    listContainer.innerHTML = filtered.map(hood => `
+    listContainer.innerHTML = neighborhoods.map(hood => `
         <div class="neighborhood-card" onclick="window.location.href='neighborhood.html?id=${hood.id}'">
             <div class="neighborhood-score">
                 <div class="score-value">${hood.civicScore}</div>
@@ -225,6 +232,17 @@ function filterNeighborhoods(searchTerm) {
             <div class="neighborhood-arrow">→</div>
         </div>
     `).join('');
+}
+
+function filterNeighborhoods(searchTerm) {
+    if (!window.allNeighborhoods) return;
+
+    const term = searchTerm.toLowerCase();
+    const filtered = window.allNeighborhoods.filter(hood =>
+        hood.name.toLowerCase().includes(term)
+    );
+
+    renderNeighborhoodsList(filtered);
 }
 
 // ========== NEIGHBORHOOD DETAIL PAGE ==========

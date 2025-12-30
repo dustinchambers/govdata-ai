@@ -29,8 +29,25 @@
     <!-- Results Header -->
     <div class="results-header">
         <div class="container">
-            <h1>Denver Neighborhoods</h1>
-            <p id="resultsCount">Loading neighborhoods...</p>
+            <div class="results-header-content">
+                <div>
+                    <h1>Denver Neighborhoods</h1>
+                    <p id="resultsCount">Loading neighborhoods...</p>
+                </div>
+                <div class="sort-controls">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy" onchange="sortNeighborhoods()">
+                        <option value="civic-asc">Civic Score (Low to High)</option>
+                        <option value="civic-desc">Civic Score (High to Low)</option>
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="crime-desc">Crime Count (High to Low)</option>
+                        <option value="crime-asc">Crime Count (Low to High)</option>
+                        <option value="service-desc">Service Requests (High to Low)</option>
+                        <option value="service-asc">Service Requests (Low to High)</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
 
