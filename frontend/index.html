@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicValue - Find Undervalued Denver Neighborhoods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🏡 CivicValue</a>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#" class="btn-nav">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Undervalued<br>Denver Neighborhoods</h1>
+            <p>Discover which neighborhoods get less city investment relative to crime. AI-powered civic data analysis reveals where your tax dollars work hardest.</p>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="neighborhoodSearch"
+                    class="search-input"
+                    placeholder="Search by neighborhood (e.g., Capitol Hill, Five Points)..."
+                    list="neighborhoods"
+                >
+                <datalist id="neighborhoods"></datalist>
+                <button class="btn-search" onclick="searchNeighborhoods()">Search</button>
+            </div>
+
+            <a href="search.html" class="explore-link">or explore all neighborhoods →</a>
+
+            <div class="trust-badges">
+                <div class="badge">
+                    <div class="badge-number">267K+</div>
+                    <div class="badge-label">Crime Records Analyzed</div>
+                </div>
+                <div class="badge">
+                    <div class="badge-number">78</div>
+                    <div class="badge-label">Neighborhoods Covered</div>
+                </div>
+                <div class="badge">
+                    <div class="badge-number">1.1K+</div>
+                    <div class="badge-label">Service Requests Tracked</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-section">
+        <div class="container">
+            <h2 class="section-title-center">How The Civic Value Score Works</h2>
+            <p class="section-subtitle">We analyze real city data to calculate how effectively Denver serves each neighborhood</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Crime Data Analysis</h3>
+                    <p>We analyze 267,000+ crime incidents across Denver to understand safety patterns in each neighborhood.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>City Service Tracking</h3>
+                    <p>Track 311 requests like streetlight repairs to measure how quickly the city responds to each neighborhood.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Civic Value Score</h3>
+                    <p>Our AI calculates which neighborhoods are under-served relative to their needs - revealing hidden value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Find Your Neighborhood's Value?</h2>
+            <p>Start exploring Denver's civic data today</p>
+            <a href="search.html" class="btn-cta">Browse All Neighborhoods</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Built with Denver Open Data + AI | <a href="https://github.com/dustinchambers/govdata-ai">Open Source</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script>
+        // Load neighborhoods for autocomplete
+        loadNeighborhoods();
+
+        // Enter key to search
+        document.getElementById('neighborhoodSearch').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchNeighborhoods();
+            }
+        });
+    </script>
+</body>
+</html>

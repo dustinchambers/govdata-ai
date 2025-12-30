@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denver Neighborhoods - CivicValue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🏡 CivicValue</a>
+            <div class="search-bar">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search neighborhoods..."
+                    class="nav-search-input"
+                >
+            </div>
+            <div class="nav-links">
+                <a href="#" class="btn-nav">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Results Header -->
+    <div class="results-header">
+        <div class="container">
+            <h1>Denver Neighborhoods</h1>
+            <p id="resultsCount">Loading neighborhoods...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="results-layout">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="filter-card">
+                    <h3>About Civic Value Score</h3>
+                    <p>The Civic Value Score measures how effectively the city serves each neighborhood relative to crime and infrastructure needs.</p>
+                    <div class="score-legend">
+                        <div class="legend-item">
+                            <span class="score-badge score-high">80-100</span>
+                            <span>High Value</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="score-badge score-medium">50-79</span>
+                            <span>Medium Value</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="score-badge score-low">0-49</span>
+                            <span>Low Value</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-card">
+                    <h3>Data Sources</h3>
+                    <ul class="data-sources">
+                        <li>✓ Denver Crime Reports (2022-2025)</li>
+                        <li>✓ 311 Service Requests</li>
+                        <li>✓ Infrastructure Maintenance Data</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Results List -->
+            <main class="results-main">
+                <div id="loadingState" class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading neighborhood data...</p>
+                </div>
+
+                <div id="errorState" class="error-state hidden">
+                    <p>Error loading neighborhoods. Please try again.</p>
+                </div>
+
+                <div id="neighborhoodsList" class="neighborhoods-list"></div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Load and display all neighborhoods
+        loadAllNeighborhoods();
+
+        // Search filter
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            filterNeighborhoods(e.target.value);
+        });
+    </script>
+</body>
+</html>

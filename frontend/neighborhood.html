@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Neighborhood - CivicValue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">🏡 CivicValue</a>
+            <div class="nav-links">
+                <a href="search.html">← Back to All Neighborhoods</a>
+                <a href="#" class="btn-nav">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Neighborhood Header -->
+    <div class="neighborhood-header">
+        <div class="container">
+            <div id="loadingHeader" class="loading-state">
+                <p>Loading neighborhood data...</p>
+            </div>
+
+            <div id="neighborhoodHeaderContent" class="hidden">
+                <div class="breadcrumb">
+                    <a href="search.html">All Neighborhoods</a> / <span id="headerNeighborhoodName"></span>
+                </div>
+
+                <h1 id="neighborhoodTitle"></h1>
+
+                <div class="header-stats">
+                    <div class="header-stat-card">
+                        <div class="stat-label">Civic Value Score</div>
+                        <div class="stat-value" id="civicScore">--</div>
+                        <div class="stat-change" id="scoreDescription"></div>
+                    </div>
+                    <div class="header-stat-card">
+                        <div class="stat-label">Total Crimes</div>
+                        <div class="stat-value" id="totalCrimes">--</div>
+                    </div>
+                    <div class="header-stat-card">
+                        <div class="stat-label">Service Requests</div>
+                        <div class="stat-value" id="serviceRequests">--</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content-layout">
+            <!-- Main Column -->
+            <main class="main-column">
+                <!-- Civic Value Breakdown -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Civic Value Score Breakdown</h2>
+                        <span class="section-badge">What This Means</span>
+                    </div>
+
+                    <div id="scoreBreakdown" class="score-breakdown">
+                        <div class="loading-state">Loading score data...</div>
+                    </div>
+                </section>
+
+                <!-- Crime Analysis -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Crime & Safety Analysis</h2>
+                    </div>
+
+                    <div id="crimeAnalysis" class="analysis-content">
+                        <div class="loading-state">Loading crime data...</div>
+                    </div>
+                </section>
+
+                <!-- City Services -->
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2 class="section-title">City Services & Infrastructure</h2>
+                    </div>
+
+                    <div id="servicesAnalysis" class="analysis-content">
+                        <div class="loading-state">Loading services data...</div>
+                    </div>
+                </section>
+
+                <!-- AI Insights -->
+                <section class="content-section" id="aiInsightsSection">
+                    <div class="section-header">
+                        <h2 class="section-title">AI Analysis</h2>
+                        <span class="section-badge">Powered by Claude</span>
+                    </div>
+
+                    <div id="aiInsights" class="ai-insights">
+                        <div class="loading-state">Loading AI insights...</div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="detail-sidebar">
+                <!-- Quick Stats -->
+                <div class="sidebar-card">
+                    <h3>Quick Facts</h3>
+                    <div id="quickFacts" class="quick-facts">
+                        <div class="loading-state">Loading...</div>
+                    </div>
+                </div>
+
+                <!-- Value Gap -->
+                <div class="sidebar-card value-gap-card">
+                    <h3>Value Gap Analysis</h3>
+                    <p id="valueGapText" class="value-gap-text">Loading analysis...</p>
+                </div>
+
+                <!-- Actions -->
+                <div class="sidebar-card">
+                    <h3>Actions</h3>
+                    <div class="action-buttons-vertical">
+                        <button class="btn btn-primary" onclick="alert('Feature coming soon!')">
+                            📊 View Full Report
+                        </button>
+                        <button class="btn btn-secondary" onclick="window.location.href='search.html'">
+                            🔍 Compare Neighborhoods
+                        </button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Get neighborhood from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const neighborhoodId = urlParams.get('id');
+
+        if (neighborhoodId) {
+            loadNeighborhoodDetail(neighborhoodId);
+        } else {
+            document.getElementById('loadingHeader').innerHTML = '<p>No neighborhood specified</p>';
+        }
+    </script>
+</body>
+</html>
