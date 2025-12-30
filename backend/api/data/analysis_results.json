@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-12-30T11:27:45.054420",
+    "generated_at": "2025-12-30T15:43:24.408009",
     "data_source": "Denver Open Data",
     "analysis_type": "Crime + Infrastructure Correlation"
   },
@@ -49,7 +49,7 @@
   },
   "ai_insights": {
     "summary": "Error generating AI insights",
-    "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-opus-20240229'}, 'request_id': 'req_011CWdBkzsygDsEUYNvn6amV'}"
+    "error": "Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-opus-20240229'}, 'request_id': 'req_011CWdXFiZEDGAFFRsVofv32'}"
   },
   "neighborhoods": {
     "athmar-park": {
@@ -61,8 +61,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.13155136268343814,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "auraria": {
       "total_incidents": 2318,
@@ -73,8 +73,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.12170976007453994,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "baker": {
       "total_incidents": 4800,
@@ -85,8 +85,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.2662473794549266,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "barnum": {
       "total_incidents": 2077,
@@ -97,8 +97,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.10767528534824132,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "barnum-west": {
       "total_incidents": 1148,
@@ -109,8 +109,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.053575588166783136,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "bear-valley": {
       "total_incidents": 1760,
@@ -121,8 +121,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.0892150011646867,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "belcaro": {
       "total_incidents": 982,
@@ -133,8 +133,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.04390868856277661,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "berkeley": {
       "total_incidents": 2131,
@@ -145,8 +145,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.11081993943629163,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "capitol-hill": {
       "total_incidents": 9993,
@@ -157,8 +157,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.5686582809224319,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "cbd": {
       "total_incidents": 8720,
@@ -169,8 +169,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.4945259725133939,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "central-park": {
       "total_incidents": 14420,
@@ -181,8 +181,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.8264616818075937,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "chaffee-park": {
       "total_incidents": 1055,
@@ -193,8 +193,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.04815979501514093,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "cheesman-park": {
       "total_incidents": 3142,
@@ -205,8 +205,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.16969485208478918,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "cherry-creek": {
       "total_incidents": 3329,
@@ -217,8 +217,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.1805846727230375,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "city-park": {
       "total_incidents": 1532,
@@ -229,8 +229,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.07593757279291871,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "city-park-west": {
       "total_incidents": 3625,
@@ -241,8 +241,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.19782203587235034,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "civic-center": {
       "total_incidents": 6332,
@@ -253,8 +253,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.3554623806196133,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "clayton": {
       "total_incidents": 1821,
@@ -265,8 +265,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.09276729559748427,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "cole": {
       "total_incidents": 1685,
@@ -277,8 +277,8 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.08484742604239459,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     },
     "college-view-south-platte": {
       "total_incidents": 2774,
@@ -289,8 +289,368 @@
       "avg_response_days": 0.0,
       "open_requests": 0,
       "crime_norm": 0.14826461681807593,
-      "streetlight_norm": NaN,
-      "crime_infrastructure_index": NaN
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "congress-park": {
+      "total_incidents": 2783,
+      "crime_count": 2783,
+      "traffic_count": 0,
+      "property_crime_count": 1791,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.148788725832751,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "cory-merrill": {
+      "total_incidents": 1717,
+      "crime_count": 1717,
+      "traffic_count": 0,
+      "property_crime_count": 1314,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.08671092476123923,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "country-club": {
+      "total_incidents": 546,
+      "crime_count": 546,
+      "traffic_count": 0,
+      "property_crime_count": 415,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.018518518518518517,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "dia": {
+      "total_incidents": 14602,
+      "crime_count": 14602,
+      "traffic_count": 0,
+      "property_crime_count": 10707,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.8370603307710226,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "east-colfax": {
+      "total_incidents": 6496,
+      "crime_count": 6496,
+      "traffic_count": 0,
+      "property_crime_count": 2180,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.36501281155369203,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "elyria-swansea": {
+      "total_incidents": 3524,
+      "crime_count": 3524,
+      "traffic_count": 0,
+      "property_crime_count": 1923,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.19194036804099698,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "five-points": {
+      "total_incidents": 17400,
+      "crime_count": 17400,
+      "traffic_count": 0,
+      "property_crime_count": 7918,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 1.0,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "fort-logan": {
+      "total_incidents": 1221,
+      "crime_count": 1221,
+      "traffic_count": 0,
+      "property_crime_count": 677,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.057826694619147447,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "gateway-green-valley-ranch": {
+      "total_incidents": 7406,
+      "crime_count": 7406,
+      "traffic_count": 0,
+      "property_crime_count": 4333,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.41800605637083627,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "globeville": {
+      "total_incidents": 2990,
+      "crime_count": 2990,
+      "traffic_count": 0,
+      "property_crime_count": 1585,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.16084323317027718,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "goldsmith": {
+      "total_incidents": 2148,
+      "crime_count": 2148,
+      "traffic_count": 0,
+      "property_crime_count": 1298,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.11180992313067785,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "hale": {
+      "total_incidents": 2490,
+      "crime_count": 2490,
+      "traffic_count": 0,
+      "property_crime_count": 1533,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.13172606568832984,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "hampden": {
+      "total_incidents": 5249,
+      "crime_count": 5249,
+      "traffic_count": 0,
+      "property_crime_count": 3177,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.29239459585371536,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "hampden-south": {
+      "total_incidents": 4178,
+      "crime_count": 4178,
+      "traffic_count": 0,
+      "property_crime_count": 2596,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.23002562310738411,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "harvey-park": {
+      "total_incidents": 2192,
+      "crime_count": 2192,
+      "traffic_count": 0,
+      "property_crime_count": 1095,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.11437223386908922,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "harvey-park-south": {
+      "total_incidents": 1878,
+      "crime_count": 1878,
+      "traffic_count": 0,
+      "property_crime_count": 1045,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.09608665269042628,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "highland": {
+      "total_incidents": 4101,
+      "crime_count": 4101,
+      "traffic_count": 0,
+      "property_crime_count": 2715,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.22554157931516422,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "hilltop": {
+      "total_incidents": 1419,
+      "crime_count": 1419,
+      "traffic_count": 0,
+      "property_crime_count": 948,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.0693570929419986,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "indian-creek": {
+      "total_incidents": 460,
+      "crime_count": 460,
+      "traffic_count": 0,
+      "property_crime_count": 283,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.013510365711623572,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "jefferson-park": {
+      "total_incidents": 1837,
+      "crime_count": 1837,
+      "traffic_count": 0,
+      "property_crime_count": 1261,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.09369904495690659,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "kennedy": {
+      "total_incidents": 1536,
+      "crime_count": 1536,
+      "traffic_count": 0,
+      "property_crime_count": 805,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.07617051013277429,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "lincoln-park": {
+      "total_incidents": 6138,
+      "crime_count": 6138,
+      "traffic_count": 0,
+      "property_crime_count": 3023,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.34416491963661777,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "lowry-field": {
+      "total_incidents": 2945,
+      "crime_count": 2945,
+      "traffic_count": 0,
+      "property_crime_count": 1857,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.15822268809690193,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "mar-lee": {
+      "total_incidents": 2837,
+      "crime_count": 2837,
+      "traffic_count": 0,
+      "property_crime_count": 1278,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.1519333799208013,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "marston": {
+      "total_incidents": 1613,
+      "crime_count": 1613,
+      "traffic_count": 0,
+      "property_crime_count": 1051,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.08065455392499418,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "montbello": {
+      "total_incidents": 7247,
+      "crime_count": 7247,
+      "traffic_count": 0,
+      "property_crime_count": 3658,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.40874679711157696,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "montclair": {
+      "total_incidents": 2007,
+      "crime_count": 2007,
+      "traffic_count": 0,
+      "property_crime_count": 1286,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.1035988819007687,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "north-capitol-hill": {
+      "total_incidents": 5717,
+      "crime_count": 5717,
+      "traffic_count": 0,
+      "property_crime_count": 2353,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.31964826461681806,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "north-park-hill": {
+      "total_incidents": 1359,
+      "crime_count": 1359,
+      "traffic_count": 0,
+      "property_crime_count": 811,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.06586303284416492,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
+    },
+    "northeast-park-hill": {
+      "total_incidents": 5048,
+      "crime_count": 5048,
+      "traffic_count": 0,
+      "property_crime_count": 2606,
+      "streetlight_requests": 0.0,
+      "avg_response_days": 0.0,
+      "open_requests": 0,
+      "crime_norm": 0.2806894945259725,
+      "streetlight_norm": null,
+      "crime_infrastructure_index": null
     }
   }
 }

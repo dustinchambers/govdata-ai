@@ -243,6 +243,9 @@ def save_results(stats, insights, neighborhood_analysis):
     """Save analysis results as JSON files"""
     print("💾 Saving results...")
 
+    # Convert neighborhood_analysis to dict and replace NaN with None
+    neighborhoods_dict = neighborhood_analysis.head(50).replace({np.nan: None}).to_dict('index')
+
     # Save main analysis
     output = {
         'metadata': {
@@ -252,12 +255,12 @@ def save_results(stats, insights, neighborhood_analysis):
         },
         'statistics': stats,
         'ai_insights': insights,
-        'neighborhoods': neighborhood_analysis.head(20).to_dict('index')  # Top 20 for API
+        'neighborhoods': neighborhoods_dict
     }
 
     output_file = OUTPUT_DIR / 'analysis_results.json'
     with open(output_file, 'w') as f:
-        json.dump(output, f, indent=2)
+        json.dump(output, f, indent=2, default=str)
 
     print(f"   ✓ Saved to {output_file}")
 
