@@ -1,25 +1,14 @@
-# Ethica.Design MVP - Python Dependencies
+# FastAPI and server
+fastapi==0.115.12
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
 
-# Data manipulation
-pandas>=2.0.0
-numpy>=1.24.0
+# Data processing
+pandas==2.3.3
+numpy==2.0.2
 
-# HTTP requests for data download
-requests>=2.31.0
+# AI
+anthropic==0.75.0
 
-# Statistical analysis
-scipy>=1.11.0
-
-# Geospatial data (for GeoJSON handling)
-geopandas>=0.14.0
-
-# AI insights generation
-anthropic>=0.39.0
-
-# Optional: For visualization (if you want to create charts)
-matplotlib>=3.7.0
-seaborn>=0.13.0
-
-# Optional: For creating interactive maps (future enhancement)
-folium>=0.15.0
-plotly>=5.18.0
+# Utilities
+python-dateutil==2.9.0.post0
